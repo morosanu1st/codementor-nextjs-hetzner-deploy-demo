@@ -1,6 +1,6 @@
 # Next.js 15 → Hetzner Ubuntu Deploy Demo
 
-Small **App Router** sample plus a practical deploy kit for putting an existing Next.js 15 app on a **Hetzner Cloud Ubuntu** VPS: Node LTS, `standalone` output, **Nginx** reverse proxy, **systemd**, and Let's Encrypt.
+Small **App Router** sample plus a practical deploy kit for putting an existing Next.js 15 app on a **Hetzner Cloud Ubuntu** VPS: Node LTS, `standalone` output, **Caddy** or **Nginx** reverse proxy, **systemd**, and automatic HTTPS.
 
 Topic/skill demo only — no client branding.
 
@@ -14,6 +14,8 @@ Topic/skill demo only — no client branding.
 | Standalone production output | `next.config.mjs` (`output: 'standalone'`) |
 | Deploy checklist | [`docs/01-deploy-checklist.md`](docs/01-deploy-checklist.md) |
 | Nginx reverse-proxy template | [`deploy/nginx-nextjs.conf`](deploy/nginx-nextjs.conf) |
+| Caddyfile example (auto HTTPS) | [`deploy/Caddyfile.example`](deploy/Caddyfile.example) |
+| Caddy + systemd session notes | [`docs/02-caddy-systemd-notes.md`](docs/02-caddy-systemd-notes.md) |
 | systemd unit | [`deploy/nextjs.service`](deploy/nextjs.service) |
 | Illustrative remote bootstrap | [`scripts/remote-setup.sh`](scripts/remote-setup.sh) |
 

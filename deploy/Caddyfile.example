@@ -1,0 +1,6 @@
+# Example Caddyfile for Next.js (proxy to systemd app on :3000)
+# Replace example.com with the real domain; Caddy handles HTTPS automatically.
+
+example.com {
+	reverse_proxy 127.0.0.1:3000
+}
